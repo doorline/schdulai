@@ -1,0 +1,47 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F7F7F5;
+  --text: #1A1A1A;
+  --subtext: #9B9B9B;
+  --accent: #8DB27A;
+  --accent-tint: #EAF2E6;
+  --divider: #E8E8E8;
+  --white: #FFFFFF;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Pretendard Variable', 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #EBEBEA;
+  display: flex;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100%;
+  background: var(--bg);
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input, textarea {
+  font-family: inherit;
+}

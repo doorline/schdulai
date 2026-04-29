@@ -1,0 +1,199 @@
+/* Shared navigation */
+.navRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 12px;
+}
+
+.navLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 22px;
+  color: var(--subtext);
+  transition: background 0.1s, color 0.1s;
+}
+
+.navBtn:hover {
+  background: var(--divider);
+  color: var(--text);
+}
+
+/* Month view */
+.monthView {}
+
+.dayNames {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 10px;
+  margin-bottom: 2px;
+}
+
+.dayName {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--subtext);
+  padding: 4px 0;
+}
+
+.sun { color: #D95050; }
+.sat { color: #5070D9; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 10px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 2px 6px;
+  min-height: 46px;
+}
+
+.outMonth .dateNum {
+  color: #CECECE;
+}
+
+.dateNum {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text);
+  border-radius: 50%;
+  transition: background 0.1s;
+}
+
+.todayNum {
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.sunText { color: #D95050; }
+.satText { color: #5070D9; }
+
+.dots {
+  display: flex;
+  gap: 2px;
+  margin-top: 3px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* Week view */
+.weekView {}
+
+.weekHeader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 10px 8px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.weekCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 2px;
+}
+
+.weekDayName {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--subtext);
+}
+
+.weekDateNum {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--text);
+  border-radius: 50%;
+}
+
+.todayCircle {
+  background: var(--accent);
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.weekDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.weekEvents {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.empty {
+  text-align: center;
+  color: var(--subtext);
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+.eventCard {
+  padding: 12px 14px;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--divider);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.eventMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--subtext);
+}
+
+.eventDate {
+  font-weight: 500;
+}
+
+.eventTime {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.eventTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}

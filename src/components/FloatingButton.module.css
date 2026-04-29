@@ -1,0 +1,32 @@
+.btn {
+  position: fixed;
+  bottom: max(28px, calc(env(safe-area-inset-bottom) + 16px));
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--text);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s, box-shadow 0.15s;
+  z-index: 20;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* On wide viewports, align button to the right edge of the 430px app container */
+@media (min-width: 430px) {
+  .btn {
+    right: calc(50vw - 215px + 20px);
+  }
+}

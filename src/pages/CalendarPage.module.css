@@ -1,0 +1,53 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--divider);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.4px;
+}
+
+.tabs {
+  display: flex;
+  background: var(--divider);
+  border-radius: 8px;
+  padding: 2px;
+  gap: 1px;
+}
+
+.tab {
+  padding: 5px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--subtext);
+  transition: all 0.12s;
+}
+
+.tab.active {
+  background: var(--white);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.body {
+  flex: 1;
+  padding-bottom: 100px;
+}
