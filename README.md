@@ -35,18 +35,18 @@
 
 ### 채팅 UI
 
-[chat-view](./screenshot/chatUI.png)
+![chat-view](./screenshot/chatUI.png)
 
 ---
 
 ### 캘린더 뷰
 
-[calendar-view](./screenshot/calendar_result.png)
+![calendar-view](./screenshot/calendar_result.png)
 
 
 ### 위클리 뷰
 
-[weekly-view](./screenshot/weekly_result.png)
+![weekly-view](./screenshot/weekly_result.png)
 
 ---
 
